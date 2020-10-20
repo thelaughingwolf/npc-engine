@@ -1,0 +1,19 @@
+{
+  "name": "npc-engine",
+  "version": "1.0.0",
+  "description": "Generic engine base class for node-persistent-cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelaughingwolf/npc-engine.git"
+  },
+  "author": "Michael Bennett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelaughingwolf/npc-engine/issues"
+  },
+  "homepage": "https://github.com/thelaughingwolf/npc-engine#readme"
+}
