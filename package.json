@@ -1,6 +1,6 @@
 {
   "name": "npc-engine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generic engine base class for node-persistent-cache",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thelaughingwolf/npc-engine/issues"
   },
-  "homepage": "https://github.com/thelaughingwolf/npc-engine#readme"
+  "homepage": "https://github.com/thelaughingwolf/npc-engine#readme",
+  "dependencies": {
+    "shortid": "^2.2.15"
+  }
 }

@@ -1,3 +1,5 @@
+const shortid = require('shortid');
+
 const requireMethodOverride = (methodName) => {
 	throw new Error(`The engine must implement its own '${methodName}', which must not call super()`);
 };
@@ -5,6 +7,7 @@ const requireMethodOverride = (methodName) => {
 class Engine {
 	constructor(opts = {}, cache) {
 		this.cache = cache;
+		this.id = shortid.generate();
 
 		if (!opts.prefix) {
 			opts.prefix = '';
