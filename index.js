@@ -16,15 +16,13 @@ class Engine {
 
 	/**
 	 * Convert a timestamp to a TTL
-	 * Returns undefined if timestamp is falsy or timestamp is in the past
+	 * Returns undefined if timestamp is falsy, negative if timestamp in the past
 	 * 
 	 * @param {number} [ts] - The timestamp in ms
-	 * @return {(number|undefined)} - The time until the timestamp in ms; undefined if no ts or ts in past
+	 * @return {(number|undefined)} - The time until the timestamp in ms; undefined if no ts
 	 */
 	tsToTtl(ts) {
-		let now = Date.now()
-		,	ttl = (ts && ts > now) ? (ts - now) : undefined;
-		return ttl;
+		return (ts ? (ts - Date.now()) : undefined);
 	}
 
 	/**

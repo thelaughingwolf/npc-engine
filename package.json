@@ -1,6 +1,6 @@
 {
   "name": "npc-engine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generic engine base class for node-persistent-cache",
   "main": "index.js",
   "scripts": {
